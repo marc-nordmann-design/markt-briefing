@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Interne Verteilung: nicht in Suchmaschinen. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Markt-Briefing — Archiv</title>
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markt-Briefing — Archiv">
+<meta property="og:description" content="Frühere Ausgaben des internen Markt-Briefings">
+<meta property="og:locale" content="de_DE">
+<style>
+  .briefing-leiste {
+    font-family: "Avenir Next Condensed", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px; letter-spacing: .04em;
+    display: flex; flex-wrap: wrap; gap: 6px 20px; align-items: baseline;
+    padding: 10px 32px; border-bottom: 1px solid var(--rule, #C8D4D8);
+    background: var(--surface, #F7F9F9); color: var(--muted, #6F8791);
+  }
+  .briefing-leiste b { color: var(--ink-2, #40565F); font-weight: 600; }
+  .briefing-leiste a { color: var(--data, #00699E); }
+  .briefing-leiste .rechts { margin-left: auto; }
+  @media print { .briefing-leiste { display: none; } }
+</style>
+</head>
+<body>
+<div class="briefing-leiste">
+  <span><b>Interne Marktinformation</b> — keine Anlageberatung</span>
+  <span class="rechts"><a href="./">Aktuelle Ausgabe</a></span>
+</div>
+<style>
+  /* ── Tokens ─────────────────────────────────────────────────────────────
+     Light ist die Basis. Dark wird NUR über Tokens neu definiert,
+     einmal für System-Dark, einmal für den expliziten Toggle.        */
+  :root {
+    color-scheme: light;
+    --paper:      #EDF0F1;
+    --surface:    #F7F9F9;
+    --surface-2:  #E3E9EB;
+    --ink:        #0F2027;
+    --ink-2:      #40565F;
+    --muted:      #6F8791;
+    --rule:       #C8D4D8;
+    --rule-soft:  #DBE3E6;
+    --accent:     #8A6A17;
+    --accent-bg:  #F0E9D6;
+    --data:       #00699E;
+    --data-soft:  #C9E0EC;
+    --up:         #006300;
+    --down:       #C0392B;
+    --shadow:     0 1px 2px rgba(15,32,39,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --paper:      #0F1A1E;
+      --surface:    #16232A;
+      --surface-2:  #1D2E36;
+      --ink:        #DFE8EC;
+      --ink-2:      #A9BEC6;
+      --muted:      #7E959D;
+      --rule:       #26383F;
+      --rule-soft:  #1E2E35;
+      --accent:     #D4A03C;
+      --accent-bg:  #2A2415;
+      --data:       #3F9AD1;
+      --data-soft:  #1C3A4B;
+      --up:         #0CA30C;
+      --down:       #E06A5C;
+      --shadow:     0 1px 2px rgba(0,0,0,.4);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --paper:      #0F1A1E;
+    --surface:    #16232A;
+    --surface-2:  #1D2E36;
+    --ink:        #DFE8EC;
+    --ink-2:      #A9BEC6;
+    --muted:      #7E959D;
+    --rule:       #26383F;
+    --rule-soft:  #1E2E35;
+    --accent:     #D4A03C;
+    --accent-bg:  #2A2415;
+    --data:       #3F9AD1;
+    --data-soft:  #1C3A4B;
+    --up:         #0CA30C;
+    --down:       #E06A5C;
+    --shadow:     0 1px 2px rgba(0,0,0,.4);
+  }
+
+  /* ── Type ─────────────────────────────────────────────────────────── */
+  :root {
+    --serif: Charter, "Bitstream Charter", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+    --sans:  "Avenir Next Condensed", "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --mono:  Menlo, "SF Mono", "DejaVu Sans Mono", ui-monospace, monospace;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 16.5px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .sheet {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 56px 32px 96px;
+  }
+
+  /* ── Masthead ─────────────────────────────────────────────────────── */
+  .masthead { border-top: 3px solid var(--ink); padding-top: 14px; margin-bottom: 44px; }
+  .masthead .kicker {
+    font-family: var(--sans); font-size: 12px; font-weight: 600;
+    letter-spacing: .16em; text-transform: uppercase; color: var(--accent);
+    display: flex; flex-wrap: wrap; gap: 6px 18px; margin-bottom: 14px;
+  }
+  .masthead h1 {
+    font-family: var(--sans); font-weight: 600; font-size: clamp(38px, 7vw, 62px);
+    line-height: .98; letter-spacing: -.015em; margin: 0 0 16px; text-wrap: balance;
+  }
+  .masthead .standfirst {
+    font-size: 19px; line-height: 1.5; color: var(--ink-2); max-width: 60ch; margin: 0;
+  }
+  .stamp {
+    display: flex; flex-wrap: wrap; gap: 8px 28px; margin-top: 22px;
+    padding-top: 14px; border-top: 1px solid var(--rule);
+    font-family: var(--mono); font-size: 11.5px; color: var(--muted);
+    letter-spacing: .02em;
+  }
+  .stamp b { color: var(--ink-2); font-weight: 600; }
+
+  /* ── Sections ─────────────────────────────────────────────────────── */
+  section { margin-top: 52px; }
+  .sec-head { display: flex; align-items: baseline; gap: 14px; border-bottom: 1px solid var(--rule); padding-bottom: 8px; margin-bottom: 22px; }
+  .sec-head .num {
+    font-family: var(--mono); font-size: 12px; color: var(--accent); font-weight: 700;
+    letter-spacing: .08em; flex: none;
+  }
+  .sec-head h2 {
+    font-family: var(--sans); font-weight: 600; font-size: 27px; letter-spacing: -.01em;
+    margin: 0; text-wrap: balance;
+  }
+  h3 {
+    font-family: var(--sans); font-weight: 600; font-size: 19px; letter-spacing: .005em;
+    margin: 30px 0 8px; text-wrap: balance;
+  }
+  p { margin: 0 0 14px; max-width: 68ch; }
+  .lead { font-size: 18px; color: var(--ink-2); }
+  strong { font-weight: 700; }
+  a { color: var(--data); text-underline-offset: 2px; }
+  a:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  ul { margin: 0 0 14px; padding-left: 0; list-style: none; max-width: 68ch; }
+  ul li { position: relative; padding-left: 20px; margin-bottom: 8px; }
+  ul li::before {
+    content: ""; position: absolute; left: 2px; top: .62em;
+    width: 6px; height: 1.5px; background: var(--accent);
+  }
+
+  /* ── Tabellen ─────────────────────────────────────────────────────── */
+  .table-wrap { overflow-x: auto; margin: 20px 0 10px; }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-family: var(--sans); font-size: 15px; }
+  caption {
+    caption-side: top; text-align: left; font-family: var(--sans); font-size: 13px;
+    font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--muted); padding-bottom: 8px;
+  }
+  th, td { padding: 9px 12px; text-align: right; border-bottom: 1px solid var(--rule-soft); }
+  th:first-child, td:first-child { text-align: left; padding-left: 0; }
+  th:last-child, td:last-child { padding-right: 0; }
+  thead th {
+    font-size: 11.5px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase;
+    color: var(--muted); border-bottom: 1px solid var(--rule); white-space: nowrap;
+  }
+  tbody tr:last-child td { border-bottom: 1px solid var(--rule); }
+  td.num, th.num { font-family: var(--mono); font-variant-numeric: tabular-nums; font-size: 13.5px; }
+  td.txt, th.txt { text-align: left; }
+  td.name { font-weight: 600; }
+  td .sub { display: block; font-family: var(--serif); font-size: 12.5px; font-weight: 400; color: var(--muted); line-height: 1.3; }
+  .up   { color: var(--up); }
+  .down { color: var(--down); }
+  .arrow { font-family: var(--sans); font-size: 11px; }
+
+  /* ── Figuren ──────────────────────────────────────────────────────── */
+  figure { margin: 26px 0; }
+  figure svg { display: block; width: 100%; height: auto; }
+  figcaption {
+    font-size: 13px; color: var(--muted); line-height: 1.45; margin-top: 10px;
+    max-width: 68ch; font-family: var(--sans);
+  }
+  .fig-title {
+    font-family: var(--sans); font-size: 13px; font-weight: 600; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 12px;
+  }
+  .panels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  @media (max-width: 620px) { .panels { grid-template-columns: 1fr; } }
+  .panel-name {
+    font-family: var(--sans); font-size: 14px; font-weight: 600; margin-bottom: 2px;
+  }
+  .panel-note { font-family: var(--mono); font-size: 11px; color: var(--muted); margin-bottom: 6px; }
+
+  /* SVG-Rollen */
+  .grid    { stroke: var(--rule-soft); stroke-width: 1; }
+  .axis    { stroke: var(--rule); stroke-width: 1; }
+  .bar     { fill: var(--data); }
+  .tick    { font-family: var(--mono); font-size: 10.5px; fill: var(--muted); }
+  .blabel  { font-family: var(--sans); font-size: 12.5px; fill: var(--ink); }
+  .bvalue  { font-family: var(--mono); font-size: 12px; fill: var(--ink); font-weight: 600; }
+  .plotline      { fill: none; stroke: var(--data); stroke-width: 1.6; }
+  .plotline-est  { fill: none; stroke: var(--data); stroke-width: 1.6; stroke-dasharray: 3 3; opacity: .55; }
+  .dot     { fill: var(--data); stroke: var(--surface); stroke-width: 1.5; }
+  .dot-key { fill: var(--data); stroke: var(--surface); stroke-width: 2; }
+  .plabel  { font-family: var(--mono); font-size: 10px; fill: var(--ink-2); }
+
+  /* ── Kästen ───────────────────────────────────────────────────────── */
+  .box {
+    background: var(--surface); border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent);
+    padding: 18px 20px; margin: 24px 0; box-shadow: var(--shadow);
+  }
+  .box .box-label {
+    font-family: var(--sans); font-size: 11.5px; font-weight: 700; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--accent); margin-bottom: 8px;
+  }
+  .box p:last-child { margin-bottom: 0; }
+
+  .opinion { border-left-color: var(--data); }
+  .opinion .box-label { color: var(--data); }
+
+  /* ── Zeitstrahl ───────────────────────────────────────────────────── */
+  .timeline { list-style: none; margin: 24px 0 0; padding: 0; position: relative; }
+  .timeline::before {
+    content: ""; position: absolute; left: 74px; top: 6px; bottom: 6px;
+    width: 1px; background: var(--rule);
+  }
+  .timeline li {
+    position: relative; padding: 0 0 22px 100px; margin: 0;
+  }
+  .timeline li::before { display: none; }
+  .timeline .when {
+    position: absolute; left: 0; top: 1px; width: 62px; text-align: right;
+    font-family: var(--mono); font-size: 11.5px; color: var(--muted); line-height: 1.5;
+  }
+  .timeline .node {
+    position: absolute; left: 70px; top: 7px; width: 9px; height: 9px;
+    border-radius: 50%; background: var(--paper); border: 2px solid var(--accent);
+  }
+  .timeline .node.major { background: var(--accent); }
+  .timeline .ev { font-family: var(--sans); font-weight: 600; font-size: 16px; display: block; }
+  .timeline .dt { font-size: 15px; color: var(--ink-2); }
+
+  /* ── Kennzahlen-Kacheln ───────────────────────────────────────────── */
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin: 24px 0; }
+  .tile { background: var(--surface); padding: 14px 16px; }
+  .tile .t-label { font-family: var(--sans); font-size: 11.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .tile .t-value {
+    font-family: var(--mono); font-size: 23px; font-weight: 600; margin-top: 4px;
+    letter-spacing: -.03em; white-space: nowrap;
+  }
+  /* längere Werte („3,50–3,75 %“, „805 Mrd. $“) dürfen nicht umbrechen */
+  .tile .t-value.wide { font-size: 18px; letter-spacing: -.02em; }
+  .tile .t-sub { font-size: 12.5px; color: var(--muted); line-height: 1.35; margin-top: 2px; }
+
+  /* ── Quellen / Fuß ────────────────────────────────────────────────── */
+  .sources { font-size: 13px; line-height: 1.7; color: var(--ink-2); max-width: none; column-count: 2; column-gap: 32px; }
+  @media (max-width: 620px) { .sources { column-count: 1; } }
+  .sources a { display: block; break-inside: avoid; }
+  .disclaimer {
+    margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--rule);
+    font-size: 13px; color: var(--muted); max-width: 68ch;
+  }
+  .fn { font-size: 13.5px; color: var(--muted); max-width: 68ch; }
+  sup { font-family: var(--mono); font-size: 10px; }
+
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+  /* ── Druck / PDF ──────────────────────────────────────────────────── */
+  @media print {
+    :root {
+      color-scheme: light;
+      --paper: #FFFFFF; --surface: #F6F8F9; --surface-2: #E9EEF0;
+      --ink: #0F2027; --ink-2: #3B5058; --muted: #667E88;
+      --rule: #B9C7CC; --rule-soft: #D6DFE2;
+      --accent: #7C5F14; --accent-bg: #F2ECDA;
+      --data: #00699E; --data-soft: #C9E0EC;
+      --up: #006300; --down: #B33326; --shadow: none;
+    }
+    @page { size: A4; margin: 16mm 15mm 18mm; }
+    body { background: #fff; font-size: 10.5pt; line-height: 1.5; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .sheet { max-width: none; padding: 0; }
+    .masthead h1 { font-size: 34pt; }
+    .masthead .standfirst { font-size: 12pt; }
+    .sec-head h2 { font-size: 16pt; }
+    h3 { font-size: 12pt; }
+    section { margin-top: 22pt; }
+    /* Nur wirklich atomare Blöcke zusammenhalten — NICHT ganze <section>,
+       sonst wandern komplette Abschnitte auf neue Seiten und lassen
+       halbe Seiten leer. */
+    figure, table, .box, .tiles, .timeline li, .panels { break-inside: avoid; page-break-inside: avoid; }
+    .sec-head, h3 { break-after: avoid; page-break-after: avoid; }
+    p, ul li { orphans: 3; widows: 3; }
+    a { color: var(--ink); text-decoration: none; }
+    .sources { font-size: 8pt; column-count: 3; }
+    .disclaimer { margin-top: 14pt; padding-top: 8pt; font-size: 8.5pt; }
+    .sources a { color: var(--ink-2); }
+    table { min-width: 0; font-size: 9pt; }
+    td.num, th.num { font-size: 8.5pt; }
+    .table-wrap { overflow: visible; }
+    .panels { grid-template-columns: repeat(3, 1fr); }
+  }
+</style>
+<div class="sheet">
+  <header class="masthead">
+    <div class="kicker"><span>Markt &amp; Politik</span><span>Archiv</span></div>
+    <h1>Frühere Ausgaben</h1>
+    <p class="standfirst">2 Ausgaben.
+    Kurse werden an Börsentagen aktualisiert, der Analysetext montags.</p>
+  </header>
+  <section>
+    <ul>
+      <li><a href="a/2026-08-18.html">Di. 18.08.2026</a></li>
+      <li><a href="a/2026-08-17.html">Mo. 17.08.2026</a></li>
+    </ul>
+    <p><a href="./">Zur aktuellen Ausgabe</a></p>
+  </section>
+</div>
+</body>
+</html>
