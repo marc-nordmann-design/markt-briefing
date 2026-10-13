@@ -1,0 +1,1057 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Interne Verteilung: nicht in Suchmaschinen. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Markt-Briefing 13.10.2026</title>
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markt-Briefing 13.10.2026">
+<meta property="og:description" content="Kurse, politische Lage und Einschätzung — intern, keine Anlageberatung.">
+<meta property="og:locale" content="de_DE">
+<style>
+  .briefing-leiste {
+    font-family: "Avenir Next Condensed", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px; letter-spacing: .04em;
+    display: flex; flex-wrap: wrap; gap: 6px 20px; align-items: baseline;
+    padding: 10px 32px; border-bottom: 1px solid var(--rule, #C8D4D8);
+    background: var(--surface, #F7F9F9); color: var(--muted, #6F8791);
+  }
+  .briefing-leiste b { color: var(--ink-2, #40565F); font-weight: 600; }
+  .briefing-leiste a { color: var(--data, #00699E); }
+  .briefing-leiste .rechts { margin-left: auto; }
+  @media print { .briefing-leiste { display: none; } }
+</style>
+</head>
+<body>
+<div class="briefing-leiste">
+  <span><b>Interne Marktinformation</b> — keine Anlageberatung</span>
+  <span class="rechts">Ausgabe vom 13.10.2026 · <a href="../">Aktuelle Ausgabe</a> · <a href="../archiv.html">Archiv</a></span>
+</div>
+<style>
+  /* ── Tokens ─────────────────────────────────────────────────────────────
+     Light ist die Basis. Dark wird NUR über Tokens neu definiert,
+     einmal für System-Dark, einmal für den expliziten Toggle.        */
+  :root {
+    color-scheme: light;
+    --paper:      #EDF0F1;
+    --surface:    #F7F9F9;
+    --surface-2:  #E3E9EB;
+    --ink:        #0F2027;
+    --ink-2:      #40565F;
+    --muted:      #6F8791;
+    --rule:       #C8D4D8;
+    --rule-soft:  #DBE3E6;
+    --accent:     #8A6A17;
+    --accent-bg:  #F0E9D6;
+    --data:       #00699E;
+    --data-soft:  #C9E0EC;
+    --up:         #006300;
+    --down:       #C0392B;
+    --shadow:     0 1px 2px rgba(15,32,39,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --paper:      #0F1A1E;
+      --surface:    #16232A;
+      --surface-2:  #1D2E36;
+      --ink:        #DFE8EC;
+      --ink-2:      #A9BEC6;
+      --muted:      #7E959D;
+      --rule:       #26383F;
+      --rule-soft:  #1E2E35;
+      --accent:     #D4A03C;
+      --accent-bg:  #2A2415;
+      --data:       #3F9AD1;
+      --data-soft:  #1C3A4B;
+      --up:         #0CA30C;
+      --down:       #E06A5C;
+      --shadow:     0 1px 2px rgba(0,0,0,.4);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --paper:      #0F1A1E;
+    --surface:    #16232A;
+    --surface-2:  #1D2E36;
+    --ink:        #DFE8EC;
+    --ink-2:      #A9BEC6;
+    --muted:      #7E959D;
+    --rule:       #26383F;
+    --rule-soft:  #1E2E35;
+    --accent:     #D4A03C;
+    --accent-bg:  #2A2415;
+    --data:       #3F9AD1;
+    --data-soft:  #1C3A4B;
+    --up:         #0CA30C;
+    --down:       #E06A5C;
+    --shadow:     0 1px 2px rgba(0,0,0,.4);
+  }
+
+  /* ── Type ─────────────────────────────────────────────────────────── */
+  :root {
+    --serif: Charter, "Bitstream Charter", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+    --sans:  "Avenir Next Condensed", "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --mono:  Menlo, "SF Mono", "DejaVu Sans Mono", ui-monospace, monospace;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 16.5px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .sheet {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 56px 32px 96px;
+  }
+
+  /* ── Masthead ─────────────────────────────────────────────────────── */
+  .masthead { border-top: 3px solid var(--ink); padding-top: 14px; margin-bottom: 44px; }
+  .masthead .kicker {
+    font-family: var(--sans); font-size: 12px; font-weight: 600;
+    letter-spacing: .16em; text-transform: uppercase; color: var(--accent);
+    display: flex; flex-wrap: wrap; gap: 6px 18px; margin-bottom: 14px;
+  }
+  .masthead h1 {
+    font-family: var(--sans); font-weight: 600; font-size: clamp(38px, 7vw, 62px);
+    line-height: .98; letter-spacing: -.015em; margin: 0 0 16px; text-wrap: balance;
+  }
+  .masthead .standfirst {
+    font-size: 19px; line-height: 1.5; color: var(--ink-2); max-width: 60ch; margin: 0;
+  }
+  .stamp {
+    display: flex; flex-wrap: wrap; gap: 8px 28px; margin-top: 22px;
+    padding-top: 14px; border-top: 1px solid var(--rule);
+    font-family: var(--mono); font-size: 11.5px; color: var(--muted);
+    letter-spacing: .02em;
+  }
+  .stamp b { color: var(--ink-2); font-weight: 600; }
+
+  /* ── Sections ─────────────────────────────────────────────────────── */
+  section { margin-top: 52px; }
+  .sec-head { display: flex; align-items: baseline; gap: 14px; border-bottom: 1px solid var(--rule); padding-bottom: 8px; margin-bottom: 22px; }
+  .sec-head .num {
+    font-family: var(--mono); font-size: 12px; color: var(--accent); font-weight: 700;
+    letter-spacing: .08em; flex: none;
+  }
+  .sec-head h2 {
+    font-family: var(--sans); font-weight: 600; font-size: 27px; letter-spacing: -.01em;
+    margin: 0; text-wrap: balance;
+  }
+  h3 {
+    font-family: var(--sans); font-weight: 600; font-size: 19px; letter-spacing: .005em;
+    margin: 30px 0 8px; text-wrap: balance;
+  }
+  p { margin: 0 0 14px; max-width: 68ch; }
+  .lead { font-size: 18px; color: var(--ink-2); }
+  strong { font-weight: 700; }
+  a { color: var(--data); text-underline-offset: 2px; }
+  a:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  ul { margin: 0 0 14px; padding-left: 0; list-style: none; max-width: 68ch; }
+  ul li { position: relative; padding-left: 20px; margin-bottom: 8px; }
+  ul li::before {
+    content: ""; position: absolute; left: 2px; top: .62em;
+    width: 6px; height: 1.5px; background: var(--accent);
+  }
+
+  /* ── Tabellen ─────────────────────────────────────────────────────── */
+  .table-wrap { overflow-x: auto; margin: 20px 0 10px; }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-family: var(--sans); font-size: 15px; }
+  caption {
+    caption-side: top; text-align: left; font-family: var(--sans); font-size: 13px;
+    font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--muted); padding-bottom: 8px;
+  }
+  th, td { padding: 9px 12px; text-align: right; border-bottom: 1px solid var(--rule-soft); }
+  th:first-child, td:first-child { text-align: left; padding-left: 0; }
+  th:last-child, td:last-child { padding-right: 0; }
+  thead th {
+    font-size: 11.5px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase;
+    color: var(--muted); border-bottom: 1px solid var(--rule); white-space: nowrap;
+  }
+  tbody tr:last-child td { border-bottom: 1px solid var(--rule); }
+  td.num, th.num { font-family: var(--mono); font-variant-numeric: tabular-nums; font-size: 13.5px; }
+  td.txt, th.txt { text-align: left; }
+  td.name { font-weight: 600; }
+  td .sub { display: block; font-family: var(--serif); font-size: 12.5px; font-weight: 400; color: var(--muted); line-height: 1.3; }
+  .up   { color: var(--up); }
+  .down { color: var(--down); }
+  .arrow { font-family: var(--sans); font-size: 11px; }
+
+  /* ── Figuren ──────────────────────────────────────────────────────── */
+  figure { margin: 26px 0; }
+  figure svg { display: block; width: 100%; height: auto; }
+  figcaption {
+    font-size: 13px; color: var(--muted); line-height: 1.45; margin-top: 10px;
+    max-width: 68ch; font-family: var(--sans);
+  }
+  .fig-title {
+    font-family: var(--sans); font-size: 13px; font-weight: 600; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 12px;
+  }
+  .panels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  @media (max-width: 620px) { .panels { grid-template-columns: 1fr; } }
+  .panel-name {
+    font-family: var(--sans); font-size: 14px; font-weight: 600; margin-bottom: 2px;
+  }
+  .panel-note { font-family: var(--mono); font-size: 11px; color: var(--muted); margin-bottom: 6px; }
+
+  /* SVG-Rollen */
+  .grid    { stroke: var(--rule-soft); stroke-width: 1; }
+  .axis    { stroke: var(--rule); stroke-width: 1; }
+  .bar     { fill: var(--data); }
+  .tick    { font-family: var(--mono); font-size: 10.5px; fill: var(--muted); }
+  .blabel  { font-family: var(--sans); font-size: 12.5px; fill: var(--ink); }
+  .bvalue  { font-family: var(--mono); font-size: 12px; fill: var(--ink); font-weight: 600; }
+  .plotline      { fill: none; stroke: var(--data); stroke-width: 1.6; }
+  .plotline-est  { fill: none; stroke: var(--data); stroke-width: 1.6; stroke-dasharray: 3 3; opacity: .55; }
+  .dot     { fill: var(--data); stroke: var(--surface); stroke-width: 1.5; }
+  .dot-key { fill: var(--data); stroke: var(--surface); stroke-width: 2; }
+  .plabel  { font-family: var(--mono); font-size: 10px; fill: var(--ink-2); }
+
+  /* ── Kästen ───────────────────────────────────────────────────────── */
+  .box {
+    background: var(--surface); border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent);
+    padding: 18px 20px; margin: 24px 0; box-shadow: var(--shadow);
+  }
+  .box .box-label {
+    font-family: var(--sans); font-size: 11.5px; font-weight: 700; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--accent); margin-bottom: 8px;
+  }
+  .box p:last-child { margin-bottom: 0; }
+
+  .opinion { border-left-color: var(--data); }
+  .opinion .box-label { color: var(--data); }
+
+  /* ── Zeitstrahl ───────────────────────────────────────────────────── */
+  .timeline { list-style: none; margin: 24px 0 0; padding: 0; position: relative; }
+  .timeline::before {
+    content: ""; position: absolute; left: 74px; top: 6px; bottom: 6px;
+    width: 1px; background: var(--rule);
+  }
+  .timeline li {
+    position: relative; padding: 0 0 22px 100px; margin: 0;
+  }
+  .timeline li::before { display: none; }
+  .timeline .when {
+    position: absolute; left: 0; top: 1px; width: 62px; text-align: right;
+    font-family: var(--mono); font-size: 11.5px; color: var(--muted); line-height: 1.5;
+  }
+  .timeline .node {
+    position: absolute; left: 70px; top: 7px; width: 9px; height: 9px;
+    border-radius: 50%; background: var(--paper); border: 2px solid var(--accent);
+  }
+  .timeline .node.major { background: var(--accent); }
+  .timeline .ev { font-family: var(--sans); font-weight: 600; font-size: 16px; display: block; }
+  .timeline .dt { font-size: 15px; color: var(--ink-2); }
+
+  /* ── Kennzahlen-Kacheln ───────────────────────────────────────────── */
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin: 24px 0; }
+  .tile { background: var(--surface); padding: 14px 16px; }
+  .tile .t-label { font-family: var(--sans); font-size: 11.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .tile .t-value {
+    font-family: var(--mono); font-size: 23px; font-weight: 600; margin-top: 4px;
+    letter-spacing: -.03em; white-space: nowrap;
+  }
+  /* längere Werte („3,50–3,75 %“, „805 Mrd. $“) dürfen nicht umbrechen */
+  .tile .t-value.wide { font-size: 18px; letter-spacing: -.02em; }
+  .tile .t-sub { font-size: 12.5px; color: var(--muted); line-height: 1.35; margin-top: 2px; }
+
+  /* ── Quellen / Fuß ────────────────────────────────────────────────── */
+  .sources { font-size: 13px; line-height: 1.7; color: var(--ink-2); max-width: none; column-count: 2; column-gap: 32px; }
+  @media (max-width: 620px) { .sources { column-count: 1; } }
+  .sources a { display: block; break-inside: avoid; }
+  .disclaimer {
+    margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--rule);
+    font-size: 13px; color: var(--muted); max-width: 68ch;
+  }
+  .fn { font-size: 13.5px; color: var(--muted); max-width: 68ch; }
+  sup { font-family: var(--mono); font-size: 10px; }
+
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+  /* ── Druck / PDF ──────────────────────────────────────────────────── */
+  @media print {
+    :root {
+      color-scheme: light;
+      --paper: #FFFFFF; --surface: #F6F8F9; --surface-2: #E9EEF0;
+      --ink: #0F2027; --ink-2: #3B5058; --muted: #667E88;
+      --rule: #B9C7CC; --rule-soft: #D6DFE2;
+      --accent: #7C5F14; --accent-bg: #F2ECDA;
+      --data: #00699E; --data-soft: #C9E0EC;
+      --up: #006300; --down: #B33326; --shadow: none;
+    }
+    @page { size: A4; margin: 16mm 15mm 18mm; }
+    body { background: #fff; font-size: 10.5pt; line-height: 1.5; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .sheet { max-width: none; padding: 0; }
+    .masthead h1 { font-size: 34pt; }
+    .masthead .standfirst { font-size: 12pt; }
+    .sec-head h2 { font-size: 16pt; }
+    h3 { font-size: 12pt; }
+    section { margin-top: 22pt; }
+    /* Nur wirklich atomare Blöcke zusammenhalten — NICHT ganze <section>,
+       sonst wandern komplette Abschnitte auf neue Seiten und lassen
+       halbe Seiten leer. */
+    figure, table, .box, .tiles, .timeline li, .panels { break-inside: avoid; page-break-inside: avoid; }
+    .sec-head, h3 { break-after: avoid; page-break-after: avoid; }
+    p, ul li { orphans: 3; widows: 3; }
+    a { color: var(--ink); text-decoration: none; }
+    .sources { font-size: 8pt; column-count: 3; }
+    .disclaimer { margin-top: 14pt; padding-top: 8pt; font-size: 8.5pt; }
+    .sources a { color: var(--ink-2); }
+    table { min-width: 0; font-size: 9pt; }
+    td.num, th.num { font-size: 8.5pt; }
+    .table-wrap { overflow: visible; }
+    .panels { grid-template-columns: repeat(3, 1fr); }
+  }
+</style>
+
+<div class="sheet">
+
+  <header class="masthead">
+    <div class="kicker">
+      <!-- AUTO:kicker -->
+      <span>Markt &amp; Politik</span><span>Ausgabe 10/2026</span><span>Interne Verteilung</span>
+<!-- /AUTO:kicker -->
+    </div>
+    <h1>Rekorde auf<br>brüchigem Grund</h1>
+    <p class="standfirst">
+      Alle großen Aktienindizes stehen auf oder nahe Allzeithoch. Gleichzeitig
+      steigen die Zinserwartungen, die Inflation liegt über Ziel, und eine
+      Meerenge, durch die jedes fünfte Fass Öl der Welt läuft, ist erst seit
+      wenigen Wochen wieder halbwegs befahrbar. Dieses Briefing sortiert, was
+      2026 wirklich passiert ist — und trennt dabei Zahlen von Meinung.
+    </p>
+    <div class="stamp">
+<!-- AUTO:stamp -->
+      <span><b>Stand:</b> 13. Oktober 2026</span>
+      <span><b>Kursstichtag:</b> Mo., 12.10.2026</span>
+      <span><b>Basis:</b> Kurse automatisch aktualisiert</span>
+<!-- /AUTO:stamp -->
+    </div>
+  </header>
+
+  <!-- ══ 1 ═══════════════════════════════════════════════════════════ -->
+  <section>
+    <div class="sec-head"><span class="num">01</span><h2>Die Lage in fünf Sätzen</h2></div>
+
+<!-- AUTO:kurzfassung -->
+    <ul>
+      <li><strong>Zinsen:</strong> Fed und EZB haben im September jeweils um 0,25 Prozentpunkte angehoben, weil die Inflation weiter deutlich über dem Ziel von 2 % liegt.</li>
+      <li><strong>Arbeitsmarkt:</strong> Der schwache US-Arbeitsmarktbericht für September hat die Erwartung einer weiteren Fed-Anhebung im Oktober deutlich gedämpft.</li>
+      <li><strong>Öl:</strong> Rohöl fließt wieder etwa im Vorkriegsumfang durch die Straße von Hormus. Bei Diesel und Benzin fehlen aber weiterhin rund 3 Millionen Barrel pro Tag.</li>
+      <li><strong>Märkte:</strong> Der S&amp;P 500 liegt im Monatsvergleich leicht im Plus. DAX und SMI haben rund 3 bis 5 % verloren, Gold und Silber jeweils gut 6 %.</li>
+      <li><strong>KI:</strong> Amazon, Alphabet, Meta und Microsoft planen für 2026 zusammen Investitionen von rund 720 bis 745 Milliarden US-Dollar. Für 2027 erwarten Analysten mehr als 1 Billion.</li>
+    </ul>
+<!-- /AUTO:kurzfassung -->
+
+    <!-- AUTO:seit -->
+    <div class="box">
+      <div class="box-label">Seit der letzten Ausgabe — 05.10.2026</div>
+      <p>Der US-Arbeitsmarktbericht vom 2. Oktober fiel klar schwächer aus als erwartet: nur 29.000 neue Stellen, die Arbeitslosenquote stieg auf 4,2 %, und Juli und August wurden zusammen um rund 60.000 Stellen nach unten korrigiert. Laut CME FedWatch sank danach die Wahrscheinlichkeit einer Fed-Anhebung im Oktober auf unter 20 %, eine Woche zuvor lag sie noch bei rund 36 %. US-Rohöl-Futures fielen am Freitag zeitweise um mehr als 3 %, obwohl die Spannungen zwischen den USA und Iran anhalten. Die Leitzinsen selbst blieben seitdem unverändert.</p>
+    </div>
+<!-- /AUTO:seit -->
+  </section>
+
+  <!-- ══ 2 ═══════════════════════════════════════════════════════════ -->
+  <section>
+    <div class="sec-head"><span class="num">02</span><h2>Kurstafel</h2></div>
+
+    <p class="lead">
+      Alle Werte unten stammen aus derselben Quelle und demselben Stichtag, damit
+      sie untereinander vergleichbar sind. Die Prozentzahlen sind
+      <strong>12-Monats-Veränderungen</strong>, keine Jahresrenditen — der
+      Unterschied ist 2026 gewaltig, siehe Abschnitt 04.
+    </p>
+
+    <div class="table-wrap">
+      <table>
+        <caption>Automatisch aktualisiert · Quelle: Yahoo Finance · Rohstoffe als Futures-Serie</caption>
+        <thead>
+          <tr>
+            <th scope="col">Markt</th>
+            <th scope="col" class="num">Stand</th>
+            <th scope="col" class="num">1 Tag</th>
+            <th scope="col" class="num">1 Monat</th>
+            <th scope="col" class="num">12 Monate</th>
+          </tr>
+        </thead>
+<!-- AUTO:kurstafel -->
+        <tbody>
+          <tr>
+            <td class="name">S&P 500 <span class="sub">USA, Standardwerte</span></td>
+            <td class="num">7.807,24</td>
+            <td class="num down"><span class="arrow">▼</span> −0,06 %</td>
+            <td class="num up"><span class="arrow">▲</span> +1,96 %</td>
+            <td class="num up"><span class="arrow">▲</span> +19,15 %</td>
+          </tr>
+          <tr>
+            <td class="name">DAX <span class="sub">Deutschland</span></td>
+            <td class="num">25.277,68</td>
+            <td class="num up"><span class="arrow">▲</span> +0,76 %</td>
+            <td class="num down"><span class="arrow">▼</span> −1,14 %</td>
+            <td class="num up"><span class="arrow">▲</span> +4,27 %</td>
+          </tr>
+          <tr>
+            <td class="name">SMI <span class="sub">Schweiz, 20 Blue Chips</span></td>
+            <td class="num">13.877,84</td>
+            <td class="num up"><span class="arrow">▲</span> +0,66 %</td>
+            <td class="num up"><span class="arrow">▲</span> +0,74 %</td>
+            <td class="num up"><span class="arrow">▲</span> +11,19 %</td>
+          </tr>
+          <tr>
+            <td class="name">Gold <span class="sub">USD je Feinunze</span></td>
+            <td class="num">4.218,60</td>
+            <td class="num up"><span class="arrow">▲</span> +0,67 %</td>
+            <td class="num down"><span class="arrow">▼</span> −4,32 %</td>
+            <td class="num up"><span class="arrow">▲</span> +2,07 %</td>
+          </tr>
+          <tr>
+            <td class="name">Silber <span class="sub">USD je Feinunze</span></td>
+            <td class="num">60,79</td>
+            <td class="num up"><span class="arrow">▲</span> +1,08 %</td>
+            <td class="num down"><span class="arrow">▼</span> −5,83 %</td>
+            <td class="num up"><span class="arrow">▲</span> +21,26 %</td>
+          </tr>
+          <tr>
+            <td class="name">Öl (WTI) <span class="sub">USD je Barrel</span></td>
+            <td class="num">92,61</td>
+            <td class="num down"><span class="arrow">▼</span> −1,21 %</td>
+            <td class="num down"><span class="arrow">▼</span> −7,44 %</td>
+            <td class="num up"><span class="arrow">▲</span> +55,67 %</td>
+          </tr>
+        </tbody>
+<!-- /AUTO:kurstafel -->
+      </table>
+    </div>
+
+<!-- AUTO:tiles -->
+    <div class="tiles">
+      <div class="tile">
+        <div class="t-label">US-Leitzins</div>
+        <div class="t-value wide">3,75-4,00 %</div>
+        <div class="t-sub">Anhebung im September, Oktober offen</div>
+      </div>
+      <div class="tile">
+        <div class="t-label">EZB-Einlagensatz</div>
+        <div class="t-value">2,50 %</div>
+        <div class="t-sub">Einlagensatz, zweite Anhebung 2026</div>
+      </div>
+      <div class="tile">
+        <div class="t-label">US-Anleihe 10 J.</div>
+        <div class="t-value">5,24 %</div>
+        <div class="t-sub">12 Monate +29,35 %</div>
+      </div>
+      <div class="tile">
+        <div class="t-label">EUR / USD</div>
+        <div class="t-value">1,1174</div>
+        <div class="t-sub">12 Monate −3,69 %</div>
+      </div>
+    </div>
+<!-- /AUTO:tiles -->
+
+    <figure>
+      <div class="fig-title">Abb. 1 — Veränderung über 12 Monate</div>
+<!-- AUTO:abb1 -->
+      <svg viewBox="0 0 680 264" role="img" aria-labelledby="fig1t fig1d">
+        <title id="fig1t">Veränderung über zwölf Monate</title>
+        <desc id="fig1d">Öl (WTI) +55,67 %; Silber +21,26 %; S&P 500 +19,15 %; SMI +11,19 %; DAX +4,27 %; Gold +2,07 %</desc>
+        <line class="grid" x1="265.0" y1="24" x2="265.0" y2="228"/>
+        <line class="grid" x1="390.0" y1="24" x2="390.0" y2="228"/>
+        <line class="grid" x1="515.0" y1="24" x2="515.0" y2="228"/>
+        <line class="grid" x1="640.0" y1="24" x2="640.0" y2="228"/>
+        <line class="axis" x1="140" y1="24" x2="140" y2="228"/>
+        <text class="tick" x="140.0" y="246" text-anchor="middle">0 %</text>
+        <text class="tick" x="265.0" y="246" text-anchor="middle">18 %</text>
+        <text class="tick" x="390.0" y="246" text-anchor="middle">37 %</text>
+        <text class="tick" x="515.0" y="246" text-anchor="middle">56 %</text>
+        <text class="tick" x="640.0" y="246" text-anchor="middle">75 %</text>
+        <text class="blabel" x="128" y="47.0" text-anchor="end">Öl (WTI)</text>
+        <path class="bar" d="M140,34 H507.2 a4,4 0 0 1 4,4 V48 a4,4 0 0 1 -4,4 H140 Z"/>
+        <text class="bvalue" x="524.2" y="47.0">+55,67 %</text>
+        <text class="blabel" x="128" y="81.0" text-anchor="end">Silber</text>
+        <path class="bar" d="M140,68 H277.8 a4,4 0 0 1 4,4 V82 a4,4 0 0 1 -4,4 H140 Z"/>
+        <text class="bvalue" x="294.8" y="81.0">+21,26 %</text>
+        <text class="blabel" x="128" y="115.0" text-anchor="end">S&amp;P 500</text>
+        <path class="bar" d="M140,102 H263.7 a4,4 0 0 1 4,4 V116 a4,4 0 0 1 -4,4 H140 Z"/>
+        <text class="bvalue" x="280.7" y="115.0">+19,15 %</text>
+        <text class="blabel" x="128" y="149.0" text-anchor="end">SMI</text>
+        <path class="bar" d="M140,136 H210.6 a4,4 0 0 1 4,4 V150 a4,4 0 0 1 -4,4 H140 Z"/>
+        <text class="bvalue" x="227.6" y="149.0">+11,19 %</text>
+        <text class="blabel" x="128" y="183.0" text-anchor="end">DAX</text>
+        <path class="bar" d="M140,170 H164.5 a4,4 0 0 1 4,4 V184 a4,4 0 0 1 -4,4 H140 Z"/>
+        <text class="bvalue" x="181.5" y="183.0">+4,27 %</text>
+        <text class="blabel" x="128" y="217.0" text-anchor="end">Gold</text>
+        <path class="bar" d="M140,204 H149.8 a4,4 0 0 1 4,4 V218 a4,4 0 0 1 -4,4 H140 Z"/>
+        <text class="bvalue" x="166.8" y="217.0">+2,07 %</text>
+      </svg>
+<!-- /AUTO:abb1 -->
+      <figcaption>
+        Preisveränderung, ohne Dividenden. Ein starkes 12-Monats-Bild sagt wenig
+        über das laufende Jahr: Silber führt diese Liste an und liegt seit
+        Jahresbeginn trotzdem im Minus.
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- ══ 3 ═══════════════════════════════════════════════════════════ -->
+  <section>
+    <div class="sec-head"><span class="num">03</span><h2>2026 — die Kette der Schocks</h2></div>
+
+    <p>
+      Das Jahr lässt sich nicht als Trend erzählen, sondern nur als Abfolge. Zwei
+      Ereignisse — ein Rohstoff-Squeeze und eine gesperrte Meerenge — erklären
+      fast alles, was danach passiert ist.
+    </p>
+
+    <ol class="timeline">
+      <li>
+        <span class="when">01.01.</span><span class="node"></span>
+        <span class="ev">China beschränkt Silber-Exporte</span>
+        <span class="dt">Peking hält das Metall für die eigene Solar- und
+        E-Auto-Industrie zurück. China ist der zentrale Knoten der weltweiten
+        Silberraffination.</span>
+      </li>
+      <li>
+        <span class="when">29.01.</span><span class="node major"></span>
+        <span class="ev">Silber-Squeeze: Rekord bei 121,58 $</span>
+        <span class="dt">Allzeithoch. Plus 68,5 % allein im Januar. Treiber:
+        Exportstopp, KI- und Solarnachfrage, Inflationsangst wegen der Zölle.</span>
+      </li>
+      <li>
+        <span class="when">29.–30.01.</span><span class="node major"></span>
+        <span class="ev">Der Crash</span>
+        <span class="dt">Die CME erhöht die Sicherheitsleistungen. Zwangs­liquidationen:
+        Gold verliert 380 $ (−7 %) in 28 Minuten, Silber fällt binnen 30 Stunden
+        um rund 30 % auf unter 75 $.</span>
+      </li>
+      <li>
+        <span class="when">20.02.</span><span class="node"></span>
+        <span class="ev">Supreme Court kippt die Zölle</span>
+        <span class="dt">6:3 — das Notstandsgesetz IEEPA trägt keine Zölle.
+        Mögliche Rückerstattungen: 100 bis 130 Mrd. $.</span>
+      </li>
+      <li>
+        <span class="when">28.02.</span><span class="node major"></span>
+        <span class="ev">USA und Israel greifen den Iran an</span>
+        <span class="dt">Der Iran antwortet mit Drohnen, Raketen und Schnellbooten
+        gegen Schiffe in der Straße von Hormuz.</span>
+      </li>
+      <li>
+        <span class="when">04.03.</span><span class="node major"></span>
+        <span class="ev">Hormuz gilt als gesperrt</span>
+        <span class="dt">Rund 20 Mio. Barrel pro Tag — jedes fünfte weltweit
+        verbrauchte Fass — laufen normalerweise hier durch.</span>
+      </li>
+      <li>
+        <span class="when">April</span><span class="node"></span>
+        <span class="ev">Ölpreis-Spitze bei 113 $</span>
+        <span class="dt">WTI startete das Jahr nahe 57 $. Der größte Monatsanstieg
+        der Ölmarkt-Geschichte fiel in den März.</span>
+      </li>
+      <li>
+        <span class="when">Juni</span><span class="node"></span>
+        <span class="ev">Die EZB erhöht</span>
+        <span class="dt">25 Basispunkte gegen die Energie-Inflation. Der Einlagensatz
+        steht seither bei 2,25 %.</span>
+      </li>
+      <li>
+        <span class="when">16.07.</span><span class="node"></span>
+        <span class="ev">Gold-Jahrestief bei 3.975 $</span>
+        <span class="dt">Rund 26 % unter dem Januar-Hoch.</span>
+      </li>
+      <li>
+        <span class="when">Juli</span><span class="node"></span>
+        <span class="ev">Zölle kommen zurück — über einen anderen Paragrafen</span>
+        <span class="dt">Neue Basiszölle von 10 bis 12,5 % über Section 301 des
+        Trade Act von 1974. Die Section-232-Branchenzölle liefen ohnehin weiter.</span>
+      </li>
+      <li>
+        <span class="when">August</span><span class="node major"></span>
+        <span class="ev">Entspannung — und Rekorde</span>
+        <span class="dt">Iran-Oman-Gespräche, ein geplanter Großangriff wird
+        abgesagt, Öl fällt Richtung 82 $. S&amp;P 500, Dow und DAX markieren
+        Allzeithochs.</span>
+      </li>
+    </ol>
+
+    <div class="box">
+      <div class="box-label">Was daran unerledigt ist</div>
+      <p>
+        Die Tankerdurchfahrten liegen weiterhin rund 90 % unter dem Normalwert von
+        etwa 130 pro Tag, und die Kriegsrisiko-Versicherung kostet noch immer 7,5
+        bis 10 % des Schiffswerts. Das ist keine Normalisierung, sondern eine
+        Feuerpause mit offener Rechnung.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══ 4 ═══════════════════════════════════════════════════════════ -->
+  <section>
+    <div class="sec-head"><span class="num">04</span><h2>Gold, Silber, Öl — und eine Zahl, die oft falsch zitiert wird</h2></div>
+
+    <div class="box">
+      <div class="box-label">Vorsicht bei „Silber +100 %“</div>
+      <p>
+        Diese Zahl kursiert und ist irreführend. Über <strong>zwölf Monate</strong>
+        liegt Silber tatsächlich rund 70 % im Plus. <strong>Seit Jahresbeginn</strong>
+        steht es dagegen bei <strong>−12,8 %</strong>, Gold bei knapp
+        <strong>+0,8 %</strong> — praktisch unverändert. Wer im Januar nahe dem
+        Hoch gekauft hat, liegt bei Silber rund 45 % im Minus. Das ist derselbe
+        Rohstoff, nur ein anderer Startpunkt.
+      </p>
+    </div>
+
+    <figure>
+      <div class="fig-title">Abb. 2 — Belegte Kursmarken 2026</div>
+      <div class="panels">
+
+        <!-- ── GOLD ── -->
+        <div>
+          <div class="panel-name">Gold</div>
+          <div class="panel-note">USD / Feinunze</div>
+          <svg viewBox="0 0 240 172" role="img" aria-labelledby="g-t g-d">
+            <title id="g-t">Gold 2026</title>
+            <desc id="g-d">Jahresstart rund 4.340 Dollar, Hoch 5.400 am 28. Januar, Tief 3.975 am 16. Juli, 4.376 am 14. August.</desc>
+            <line class="grid" x1="36" y1="22" x2="228" y2="22"/>
+            <line class="grid" x1="36" y1="72" x2="228" y2="72"/>
+            <line class="axis" x1="36" y1="122" x2="228" y2="122"/>
+            <text class="tick" x="32" y="25" text-anchor="end">5500</text>
+            <text class="tick" x="32" y="75" text-anchor="end">4700</text>
+            <text class="tick" x="32" y="125" text-anchor="end">3900</text>
+            <text class="tick" x="37" y="140">Jan</text>
+            <text class="tick" x="112" y="140" text-anchor="middle">Apr</text>
+            <text class="tick" x="225" y="140" text-anchor="end">Aug</text>
+
+            <polyline class="plotline" points="36.8,94.5 59.4,28.25 61.9,61.7"/>
+            <polyline class="plotline-est" points="61.9,61.7 200.5,117.3"/>
+            <polyline class="plotline" points="200.5,117.3 224.7,92.25"/>
+
+            <circle class="dot" cx="36.8" cy="94.5" r="3.2"/>
+            <circle class="dot-key" cx="59.4" cy="28.25" r="4"/>
+            <circle class="dot" cx="61.9" cy="61.7" r="3.2"/>
+            <circle class="dot-key" cx="200.5" cy="117.3" r="4"/>
+            <circle class="dot-key" cx="224.7" cy="92.25" r="4"/>
+
+            <text class="plabel" x="66" y="25">5.400 · 28.01.</text>
+            <text class="plabel" x="194" y="120" text-anchor="end">3.975</text>
+            <text class="plabel" x="228" y="84" text-anchor="end">4.376</text>
+          </svg>
+        </div>
+
+        <!-- ── SILBER ── -->
+        <div>
+          <div class="panel-name">Silber</div>
+          <div class="panel-note">USD / Feinunze</div>
+          <svg viewBox="0 0 240 172" role="img" aria-labelledby="s-t s-d">
+            <title id="s-t">Silber 2026</title>
+            <desc id="s-d">Jahresstart rund 74 Dollar, Allzeithoch 121,58 am 29. Januar, Absturz auf 75 am 30. Januar, danach fallend auf 64,66 am 14. August.</desc>
+            <line class="grid" x1="36" y1="22" x2="228" y2="22"/>
+            <line class="grid" x1="36" y1="72" x2="228" y2="72"/>
+            <line class="axis" x1="36" y1="122" x2="228" y2="122"/>
+            <text class="tick" x="32" y="25" text-anchor="end">125</text>
+            <text class="tick" x="32" y="75" text-anchor="end">92,5</text>
+            <text class="tick" x="32" y="125" text-anchor="end">60</text>
+            <text class="tick" x="37" y="140">Jan</text>
+            <text class="tick" x="112" y="140" text-anchor="middle">Apr</text>
+            <text class="tick" x="225" y="140" text-anchor="end">Aug</text>
+
+            <polyline class="plotline" points="36.8,100.3 60.2,27.2 61,98.9 61.9,83.2 86.9,70 95.3,82.6 99.4,89.1 112,99.2"/>
+            <polyline class="plotline-est" points="112,99.2 224.7,114.8"/>
+
+            <circle class="dot" cx="36.8" cy="100.3" r="3.2"/>
+            <circle class="dot-key" cx="60.2" cy="27.2" r="4"/>
+            <circle class="dot" cx="61" cy="98.9" r="3.2"/>
+            <circle class="dot" cx="61.9" cy="83.2" r="3.2"/>
+            <circle class="dot" cx="86.9" cy="70" r="3.2"/>
+            <circle class="dot" cx="95.3" cy="82.6" r="3.2"/>
+            <circle class="dot" cx="99.4" cy="89.1" r="3.2"/>
+            <circle class="dot" cx="112" cy="99.2" r="3.2"/>
+            <circle class="dot-key" cx="224.7" cy="114.8" r="4"/>
+
+            <text class="plabel" x="67" y="24">121,58 · 29.01.</text>
+            <text class="plabel" x="228" y="107" text-anchor="end">64,66</text>
+          </svg>
+        </div>
+
+        <!-- ── ÖL ── -->
+        <div>
+          <div class="panel-name">Öl (WTI)</div>
+          <div class="panel-note">USD / Barrel</div>
+          <svg viewBox="0 0 240 172" role="img" aria-labelledby="o-t o-d">
+            <title id="o-t">WTI-Rohöl 2026</title>
+            <desc id="o-d">Jahresstart nahe 57 Dollar, Spitze 113 Dollar im April, 82,40 Dollar am 14. August.</desc>
+            <line class="grid" x1="36" y1="22" x2="228" y2="22"/>
+            <line class="grid" x1="36" y1="72" x2="228" y2="72"/>
+            <line class="axis" x1="36" y1="122" x2="228" y2="122"/>
+            <text class="tick" x="32" y="25" text-anchor="end">120</text>
+            <text class="tick" x="32" y="75" text-anchor="end">85</text>
+            <text class="tick" x="32" y="125" text-anchor="end">50</text>
+            <text class="tick" x="37" y="140">Jan</text>
+            <text class="tick" x="112" y="140" text-anchor="middle">Apr</text>
+            <text class="tick" x="225" y="140" text-anchor="end">Aug</text>
+
+            <polyline class="plotline-est" points="36.8,112 123.7,32 224.7,75.7"/>
+
+            <circle class="dot" cx="36.8" cy="112" r="3.2"/>
+            <circle class="dot-key" cx="123.7" cy="32" r="4"/>
+            <circle class="dot-key" cx="224.7" cy="75.7" r="4"/>
+
+            <text class="plabel" x="130" y="29">113 · April</text>
+            <text class="plabel" x="228" y="67" text-anchor="end">82,40</text>
+          </svg>
+        </div>
+      </div>
+      <figcaption>
+        Punkte = belegte Kurswerte mit Datum. Verbindungslinien dienen nur der
+        Orientierung und sind <em>kein</em> Tagesverlauf; gestrichelte Abschnitte
+        überbrücken Zeiträume ohne belegte Zwischenwerte. Die Jahresanfangswerte
+        für Gold und Silber sind aus der veröffentlichten Jahresrendite
+        zurückgerechnet, der Ölpreis-Höchststand im April ist nur monatsgenau belegt.
+      </figcaption>
+    </figure>
+
+    <h3>Was das praktisch heißt</h3>
+    <p>
+      Gold hat seine Rolle bestätigt: Es ist im Krisenmonat Januar explodiert und
+      hat den Rest des Jahres wieder abgegeben — als Versicherung funktioniert das,
+      als Renditemotor nicht. Silber ist zu rund 60 % Industriemetall und schwankt
+      entsprechend doppelt so heftig; der Januar hat gezeigt, wie schnell ein
+      enger Markt in beide Richtungen kippt, wenn ein Börsenbetreiber die Margins
+      anfasst.
+    </p>
+    <p>
+      Für Schweizer Produkte gilt nichts anderes: Swisscanto-Edelmetallprodukte
+      bilden den Metallpreis ab, also genau diese Achterbahn — der Mantel ändert
+      am Risiko nichts.
+    </p>
+  </section>
+
+  <!-- ══ 5 ═══════════════════════════════════════════════════════════ -->
+  <section>
+    <div class="sec-head"><span class="num">05</span><h2>Regionen und Indizes</h2></div>
+
+    <div class="table-wrap">
+      <table>
+        <caption>Wertentwicklung seit Jahresbeginn 2026 · gemischte Quellen, jeweils angegeben</caption>
+        <thead>
+          <tr>
+            <th scope="col">Index / Fonds</th>
+            <th scope="col" class="num">Seit 01.01.</th>
+            <th scope="col" class="num">12 Monate</th>
+            <th scope="col" class="txt">Einordnung</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="name">EM ex China (EMXC)</td>
+            <td class="num up">+29 %</td>
+            <td class="num up">+58 %</td>
+            <td class="txt">Der Gewinner des Jahres</td>
+          </tr>
+          <tr>
+            <td class="name">Nasdaq 100</td>
+            <td class="num up">+16,6 %</td>
+            <td class="num">—</td>
+            <td class="txt">KI trägt weiter</td>
+          </tr>
+          <tr>
+            <td class="name">MSCI EM (IEMG)</td>
+            <td class="num up">+15,6 %</td>
+            <td class="num up">+37,0 %</td>
+            <td class="txt">schlägt den MSCI World deutlich</td>
+          </tr>
+          <tr>
+            <td class="name">Nasdaq Composite</td>
+            <td class="num up">+13,7 %</td>
+            <td class="num">—</td>
+            <td class="txt">Schluss 26.803 am 13.08.</td>
+          </tr>
+          <tr>
+            <td class="name">FTSE EM (VWO)</td>
+            <td class="num up">+12,3 %</td>
+            <td class="num up">+22,8 %</td>
+            <td class="txt">geringeres Taiwan-Gewicht als IEMG</td>
+          </tr>
+          <tr>
+            <td class="name">MSCI World</td>
+            <td class="num up">+9,3 %</td>
+            <td class="num">—</td>
+            <td class="txt">rund 70 % USA — Klumpenrisiko</td>
+          </tr>
+          <tr>
+            <td class="name">Gold</td>
+            <td class="num up">+0,8 %</td>
+            <td class="num up">+31,2 %</td>
+            <td class="txt">seit Januar praktisch flach</td>
+          </tr>
+          <tr>
+            <td class="name">Silber</td>
+            <td class="num down">−12,8 %</td>
+            <td class="num up">+70,1 %</td>
+            <td class="txt">45 % unter dem Januar-Hoch</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>USA</h3>
+    <p>
+      Der S&amp;P 500 hat am 12. August mit 7.798,99 einen Rekordschluss markiert,
+      intraday standen 7.814,88 auf der Tafel; der Dow überschritt am 4. August
+      die 54.000. Auslöser waren Inflationsdaten unter den Erwartungen und der
+      fallende Ölpreis. Die Breite ist allerdings dünn — Technologie ist der mit
+      Abstand stärkste Sektor des Jahres.
+    </p>
+
+    <h3>Europa und Deutschland</h3>
+    <p>
+      Der DAX hat im August erstmals 26.000 überschritten und bis 26.454
+      zugelegt. Das ist kein Konjunktursignal: Das Wachstum im Euroraum wird
+      auf <strong>0,8 %</strong> geschätzt, und Kanzler Merz nennt die Lage selbst
+      „in einigen Bereichen sehr kritisch“. Was den Index trägt, sind global
+      verdienende Konzerne, Rüstung und die Tech-Erholung — nicht die
+      Binnenwirtschaft. Ein Reformprogramm ist für die Zeit nach der Sommerpause
+      angekündigt; die Ukraine-Hilfe wird künftig aus eingefrorenen russischen
+      Vermögenswerten finanziert.
+    </p>
+
+    <h3>Schweiz</h3>
+    <p>
+      Der SMI notiert bei rund 14.400 Punkten<sup>1</sup>, das Jahreshoch lag am
+      29. Juli bei 14.656. Über zwölf Monate steht ein Plus von 19,2 % — solide,
+      getragen von Pharma und der klassischen Rolle des Marktes als sicherer
+      Hafen. Der SMI besteht aus nur 20 defensiven Schwergewichten; er gewinnt
+      keine KI-Rally, hält aber in Abschwüngen besser als zyklische Indizes.
+    </p>
+
+    <h3>Schwellenländer — die eigentliche Überraschung</h3>
+    <p>
+      Institutionelle Anleger schichten wegen Geopolitik und Governance-Sorgen
+      aus China heraus um — nach Indien, Taiwan, Südkorea, Brasilien und
+      Südostasien. Im ex-China-Index wiegt Taiwan rund 30 %, Südkorea 21 %,
+      Indien 17 %. Ergebnis: <strong>EM ex China +29 % seit Jahresbeginn</strong>,
+      während der MSCI World bei +9,3 % steht. Solche Umschichtungen laufen über
+      Jahre, nicht über Monate.
+    </p>
+    <p class="fn"><sup>1</sup> Trading Economics weist 14.390,67 aus; der
+      offizielle SIX-Schlusskurs vom 14.08. lag bei 14.475,13. Die Differenz
+      stammt aus unterschiedlichen Erhebungszeitpunkten.</p>
+  </section>
+
+  <!-- ══ 6 ═══════════════════════════════════════════════════════════ -->
+  <section>
+    <div class="sec-head"><span class="num">06</span><h2>Technologie und KI</h2></div>
+
+    <p>
+      Halbleiter sind der Motor: Reine Chip-ETFs wie SOXX und SMH liegen über
+      zwölf Monate mehr als 30 Prozentpunkte vor dem breiten Technologiesektor.
+      Breit gestreute KI-Fonds schlagen ebenfalls den Nasdaq — IGPT mit +47 %,
+      CHAT mit +39 % seit Jahresbeginn, beide ohne Einzelposition über 7 %.
+    </p>
+
+    <div class="tiles">
+      <div class="tile">
+        <div class="t-label">Hyperscaler-Capex 2024</div>
+        <div class="t-value wide">261 Mrd. $</div>
+        <div class="t-sub">Amazon, Alphabet, Meta, Microsoft, Oracle</div>
+      </div>
+      <div class="tile">
+        <div class="t-label">Capex 2026 (Schätzung)</div>
+        <div class="t-value wide">805 Mrd. $</div>
+        <div class="t-sub">gut das Dreifache in zwei Jahren</div>
+      </div>
+      <div class="tile">
+        <div class="t-label">Capex 2027 (Prognose)</div>
+        <div class="t-value wide">1,1 Bio. $</div>
+        <div class="t-sub">Morgan Stanley</div>
+      </div>
+      <div class="tile">
+        <div class="t-label">Aufbau 2026–2031</div>
+        <div class="t-value wide">7,6 Bio. $</div>
+        <div class="t-sub">Goldman Sachs, kumuliert</div>
+      </div>
+    </div>
+
+    <p>
+      Die Debatte hat sich verschoben. Kaum jemand bestreitet noch, dass KI die
+      Wirtschaft verändert — gestritten wird über Tempo, Größenordnung und
+      Rentabilität. Die Investitionsquote der US-Techkonzerne liegt bei rund 23 %
+      vom Umsatz, mehr als das Doppelte des Niveaus vor ChatGPT, und der freie
+      Cashflow dieser Unternehmen dreht <strong>erstmals seit 35 Jahren ins
+      Negative</strong>.
+    </p>
+
+    <div class="box">
+      <div class="box-label">Der Haken</div>
+      <p>
+        Genau dieses Capex ist zugleich einer der Hauptmotoren des US-Wachstums.
+        Wenn der Ausbau langsamer wird, trifft das nicht nur Technologieaktien,
+        sondern das Bruttoinlandsprodukt. Chip-Nachfrage und Konjunktur sind
+        derzeit dasselbe Geschäft — das ist der Grund, warum ein Rücksetzer hier
+        breiter wirken würde als in früheren Tech-Korrekturen.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══ 7 ═══════════════════════════════════════════════════════════ -->
+  <section>
+    <div class="sec-head"><span class="num">07</span><h2>Politik — was sich hart geändert hat</h2></div>
+
+<!-- AUTO:politik -->
+    <p>
+      Der Krieg der USA und Israels gegen Iran bestimmt weiter die Märkte. Iran hat Ende September das jüngste Angebot von Präsident Trump für eine Waffenruhe abgelehnt. Trump drohte mit neuen Angriffen, deutete aber an, bis nach den Zwischenwahlen am 3. November zu warten. Die Gespräche über den Schiffsverkehr im Persischen Golf haben bisher nichts gebracht.
+    </p>
+    <p>
+      In der Straße von Hormus hat sich der Rohölverkehr stark erholt: Ende September lag er im Sieben-Tage-Schnitt bei etwa 13,5 Millionen Barrel pro Tag und damit wieder auf Vorkriegsniveau. Mitte September waren es nur 6 bis 8 Millionen. Bei Raffinerieprodukten kommen dagegen nur etwa 0,7 Millionen Barrel pro Tag durch, vor dem Krieg waren es 3,6 Millionen. Ukrainische Angriffe auf russische Raffinerien und chinesische Exportverbote verschärfen den Mangel zusätzlich. Diesel in Europa erreichte Rekordpreise. Die britische Großbank HSBC hält die Meerenge für strukturell beeinträchtigt.
+    </p>
+    <p>
+      Iran steht unter wachsendem Währungs- und Wirtschaftsdruck. Damit steigt der Anreiz, Energieanlagen in der Region anzugreifen. US-Ölfirmen rechnen laut einer Umfrage der Dallas Fed damit, dass Diesel noch mindestens ein Jahr teuer bleibt.
+    </p>
+    <p>
+      In den USA ist ein Shutdown der Regierung vorerst abgewendet, die Finanzierung reicht bis zum 11. Dezember. Zölle werden weiter an die Verbraucher weitergegeben, und Gerichtsentscheidungen zur Zollpolitik stehen noch aus. Die Fed hat am 16. September einstimmig angehoben, zum ersten Mal seit 2023. Im Mittel erwarten ihre Mitglieder für 2026 noch einen weiteren Schritt und für 2027 keine Änderung.
+    </p>
+    <p>
+      In Europa hat die EZB 2026 zweimal angehoben, im Juni und im September. Die Inflation im Euroraum stieg im August auf 3,3 %, nach 2,9 % im Juli. In Deutschland stützen schuldenfinanzierte Investitionen in Infrastruktur und Verteidigung die Konjunktur. Der Handelsstreit mit den USA und die hohen Energiepreise belasten dagegen.
+    </p>
+<!-- /AUTO:politik -->
+  </section>
+
+  <!-- ══ 8 ═══════════════════════════════════════════════════════════ -->
+  <section>
+    <div class="sec-head"><span class="num">08</span><h2>Einschätzung</h2></div>
+
+    <div class="box opinion">
+      <div class="box-label">Ab hier: Meinung, nicht Berichterstattung</div>
+      <p>
+        Alles Vorherige sind belegte Zahlen. Was jetzt folgt, ist meine Bewertung
+        dieser Zahlen — sie kann falsch sein, und sie ist keine Anlageberatung.
+      </p>
+    </div>
+
+<!-- AUTO:ausblick12m -->
+    <h3>Nächste 12 Monate</h3>
+    <p>
+      Das Grundszenario ist eine anhaltend erhöhte Inflation, getrieben vor allem durch knappe Diesel- und Benzinmengen. Die Notenbanken dürften deshalb eher straff bleiben, Zinssenkungen sind nicht in Sicht. Die Fed stellt einen weiteren Schritt in Aussicht, die Entscheidung im Oktober ist nach den schwachen Arbeitsmarktdaten aber offen. Ein sich weiter abkühlender Arbeitsmarkt könnte die Anhebungen früher beenden. Die größten Risiken sind eine Eskalation mit Iran nach den Zwischenwahlen und Angriffe auf Energieanlagen am Golf. Eine echte Waffenruhe würde dagegen die Ölpreise schnell drücken.
+    </p>
+    <p>
+      US-Aktien werden stark von den KI-Investitionen getragen, die 2027 die Marke von 1 Billion US-Dollar übersteigen könnten. Das macht den Markt abhängig von wenigen Konzernen und davon, dass sich diese Ausgaben am Ende auch auszahlen. Bleiben die Erträge aus, droht eine deutliche Korrektur. Europa und die Schweiz reagieren empfindlicher auf Energiepreise und steigende Zinsen, das zeigen die jüngsten Monatsverluste. Gold und Silber stehen unter Druck, solange die Zinsen steigen. Ihre Funktion als Absicherung gegen geopolitische Krisen bleibt aber bestehen.
+    </p>
+<!-- /AUTO:ausblick12m -->
+
+    <h3>Fünf Jahre — was strukturell trägt</h3>
+    <ul>
+      <li><strong>Energie und Stromnetze.</strong> Rechenzentren brauchen Leistung,
+        Europa braucht Unabhängigkeit von Hormuz-Risiken. Netzausbau, Speicher,
+        Kernkraft, Übertragung. Das ist der unterschätzte Teil des KI-Themas — er
+        läuft nicht über Chipdesigner, sondern über Infrastruktur.</li>
+      <li><strong>Verteidigung.</strong> Es gibt kein Szenario, in dem europäische
+        Rüstungsbudgets vor 2030 sinken.</li>
+      <li><strong>Rohstoffsicherheit.</strong> Chinas Silber-Exportstopp im Januar
+        war ein Vorgeschmack. Kritische Rohstoffe werden zunehmend politisch
+        verteilt, nicht über den Markt.</li>
+      <li><strong>Schwellenländer ohne China.</strong> Die Umschichtung nach
+        Indien, Taiwan, Korea und Brasilien ist keine Mode, sondern eine
+        institutionelle Entscheidung über Governance- und Geopolitikrisiken.</li>
+    </ul>
+
+    <h3>Zehn Jahre</h3>
+    <p>
+      Der US-Anteil im MSCI World von rund 70 % ist historisch extrem. Ich würde
+      nicht darauf setzen, dass das ein Jahrzehnt so bleibt — wer „MSCI World“
+      sagt, kauft heute überwiegend amerikanische Technologie. Bleiben die Zinsen
+      strukturell höher, und danach sieht es aus, sind langlaufende
+      Wachstumswerte teurer bewertet, als ihre Gewinne rechtfertigen. Gold behält
+      seine Funktion: nicht als Renditebringer, sondern als Versicherung gegen
+      genau die Politik, die 2026 vorgeführt hat — Zölle per Dekret, Rohstoffe als
+      Druckmittel, Notenbanken zwischen Inflation und Rezession eingeklemmt.
+    </p>
+
+    <h3>Das Unbequeme in einem Absatz</h3>
+    <p>
+      Alle großen Indizes stehen auf Allzeithochs, während die Inflation über Ziel
+      liegt, Notenbanken eher erhöhen als senken, eine Meerenge mit einem Fünftel
+      des Welt-Öls halb gesperrt ist und die größten Unternehmen der Welt erstmals
+      seit 35 Jahren mehr ausgeben als sie einnehmen. Das ist keine
+      Untergangsprognose. Aber es ist kein Umfeld, in dem man Risiko erhöht.
+    </p>
+
+    <h3>Woran man merkt, dass sich das Bild dreht</h3>
+    <ul>
+      <li>Tankerdurchfahrten durch Hormuz erholen sich Richtung Normalniveau
+        (aktuell rund 90 % darunter) — oder brechen erneut ein.</li>
+      <li>Die Fed erhöht tatsächlich statt nur zu diskutieren.</li>
+      <li>Ein Hyperscaler kürzt seine Capex-Prognose — das wäre das erste echte
+        Signal, nicht die Kommentare der Analysten.</li>
+      <li>Die 10-jährige US-Rendite bricht nachhaltig über 5 %.</li>
+      <li>Die Umschichtung aus China dreht sich — dann war es Taktik, kein Trend.</li>
+    </ul>
+  </section>
+
+  <!-- ══ Quellen ═════════════════════════════════════════════════════ -->
+  <section>
+    <div class="sec-head"><span class="num">09</span><h2>Quellen</h2></div>
+    <p class="fn">
+      Alle Kurse und Kennzahlen wurden am 15.08.2026 live abgerufen. Wo Quellen
+      sich widersprachen, ist die Abweichung im Text ausgewiesen.
+    </p>
+    <div class="sources">
+      <a href="https://tradingeconomics.com/united-states/stock-market">Trading Economics — S&amp;P 500</a>
+      <a href="https://tradingeconomics.com/germany/stock-market">Trading Economics — DAX</a>
+      <a href="https://tradingeconomics.com/switzerland/stock-market">Trading Economics — SMI</a>
+      <a href="https://tradingeconomics.com/commodity/gold">Trading Economics — Gold</a>
+      <a href="https://tradingeconomics.com/commodity/silver">Trading Economics — Silber</a>
+      <a href="https://tradingeconomics.com/commodity/crude-oil">Trading Economics — WTI</a>
+      <a href="https://tradingeconomics.com/united-states/government-bond-yield">Trading Economics — US-Renditen</a>
+      <a href="https://tradingeconomics.com/euro-area/currency">Trading Economics — EUR/USD</a>
+      <a href="https://www.cnbc.com/2026/08/12/stock-market-today-live-updates.html">CNBC — S&amp;P-Rekordschluss</a>
+      <a href="https://www.cnn.com/2026/08/04/investing/us-stock-market">CNN — Dow bei 54.000</a>
+      <a href="https://www.finanznachrichten.de/nachrichten-2026-08/69197213-dax-auf-rekordhoch-wann-fallen-26-000-punkte-088.htm">DAX-Rekordhoch</a>
+      <a href="https://www.finanzen.ch/nachrichten/aktien/aktien-schweiz-schluss-smi-vor-dem-wochenende-im-minus-1036460289">finanzen.ch — SMI-Schluss 14.08.</a>
+      <a href="https://www.msci.com/indexes/index/990100/msci-world-index">MSCI World Index</a>
+      <a href="https://www.financecharts.com/etfs/IEMG/growth/total-return">IEMG — Wertentwicklung</a>
+      <a href="https://247wallst.com/investing/2026/05/07/the-china-rotation-is-real-3-etfs-capturing-19-gains-in-2026/">EM-ex-China-Rotation</a>
+      <a href="https://www.statmuse.com/money/ask/silver-price-per-ounce-jan-2026-chart">StatMuse — Silberkurse Januar 2026</a>
+      <a href="https://www.investing.com/analysis/silvers-greatest-short-squeeze-ever-the-perfect-storm-of-2026-200672893">Investing.com — Silber-Squeeze</a>
+      <a href="https://sdbullion.com/blog/silver-rally-january-2026-biggest-intraday-price-drop">SD Bullion — Januar-Crash</a>
+      <a href="https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis">Hormuz-Krise 2026</a>
+      <a href="https://www.kpler.com/blog/iran-war-and-the-strait-of-hormuz-oil-market-implications-six-weeks-in">Kpler — Ölmarkt nach sechs Wochen</a>
+      <a href="https://www.usbank.com/investing/financial-perspectives/market-news/federal-reserve-interest-rate.html">U.S. Bank — Fed-Entscheid Juli</a>
+      <a href="https://www.morningstar.com/economy/will-fed-cut-rates-this-year">Morningstar — Ölschock und Fed</a>
+      <a href="https://www.lbbw.de/artikel/maerkte-verstehen/ezb-zinsentscheid-leitzins-prognosen_ait4bfmrfe_d.html">LBBW — EZB-Zinsentscheid</a>
+      <a href="https://www.cnbc.com/2026/02/21/supreme-courts-trump-tariff-decision-five-takeaways.html">CNBC — Supreme Court zu Zöllen</a>
+      <a href="https://taxfoundation.org/research/all/federal/trump-tariffs-trade-war/">Tax Foundation — Zoll-Tracker</a>
+      <a href="https://www.morganstanley.com/insights/articles/2026-midterm-elections-market-impact-investor-outlook">Morgan Stanley — Midterms</a>
+      <a href="https://www.pewresearch.org/politics/2026/07/23/as-the-2026-midterms-approach-economy-is-front-and-center/">Pew Research — Wählerstimmung</a>
+      <a href="https://www.goldmansachs.com/insights/articles/tracking-trillions-the-assumptions-shaping-scale-of-the-ai-build-out">Goldman Sachs — KI-Investitionen</a>
+      <a href="https://www.morganstanley.com/insights/articles/ai-market-trends-institute-2026">Morgan Stanley — KI-Markttrends</a>
+      <a href="https://nai500.com/blog/2026/07/artificial-intelligence-demand-props-up-chip-market-soxx-remains-top-tech-etf-of-the-year/">SOXX — Chip-ETF des Jahres</a>
+      <a href="https://www.fool.com/investing/2026/07/09/best-3-ai-etf-picks-for-the-second-half-of-2026/">Motley Fool — KI-ETFs</a>
+      <a href="https://www.handelsblatt.com/politik/deutschland/konjunktur-merz-sieht-lage-in-einigen-wirtschaftsbereichen-sehr-kritisch/100188932.html">Handelsblatt — Merz zur Konjunktur</a>
+    </div>
+
+    <p class="disclaimer">
+      <strong>Keine Anlageberatung.</strong> Dieses Dokument fasst öffentlich
+      verfügbare Informationen zusammen und enthält persönliche Einschätzungen,
+      die als solche gekennzeichnet sind. Kurse sind Momentaufnahmen vom
+      14. August 2026 und schwanken. Vergangene Wertentwicklung sagt nichts über
+      künftige Ergebnisse. Erstellt am 15. August 2026.
+    </p>
+  </section>
+
+</div>
+
+</body>
+</html>
